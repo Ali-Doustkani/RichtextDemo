@@ -1,4 +1,4 @@
-.panel {
+.tab-pages {
   margin: 0 auto;
   max-width: 800px;
   .toolbar {
@@ -32,5 +32,36 @@
         outline: none;
       }
     }
+  }
+  section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #abc;
+  }
+  input {
+    display: none;
+  }
+  label {
+    font-family: "Abel";
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    text-align: center;
+    color: #abc;
+  }
+  label:hover {
+    color: #789;
+    cursor: pointer;
+  }
+  input:checked + label {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4 {
+    display: block;
   }
 }

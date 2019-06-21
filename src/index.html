@@ -30,53 +30,63 @@
         <a href="https://github.com/ali-doustkani/richtext">GitHub</a>
       </div>
     </header>
-    <div class="panel">
-      <div class="toolbar">
-        <button aria-label="Important" data-balloon-blunt>
-          <i class="fas fa-bold"></i>
-        </button>
-        <button aria-label="Emphasize" data-balloon-blunt>
-          <i class="fas fa-italic"></i>
-        </button>
-        <button aria-label="Highlight" data-balloon-blunt>
-          <i class="fas fa-highlighter"></i>
-        </button>
-        <button aria-label="It's Code!" data-balloon-blunt>
-          <i class="fas fa-code" data-balloon-blunt></i>
-        </button>
-        <div class="separator"></div>
-        <button aria-label="Big Heading" data-balloon-blunt>
-          <i class="fas fa-heading"></i>
-        </button>
-        <button aria-label="Small Heading" data-balloon-blunt>
-          <i class="fas fa-heading" style="color:gray"></i>
-        </button>
-        <div class="separator"></div>
-        <button aria-label="Code Snippet" data-balloon-blunt>
-          <i class="fas fa-laptop-code"></i>
-        </button>
-        <button aria-label="Quote" data-balloon-blunt>
-          <i class="fas fa-quote-left"></i>
-        </button>
-        <button aria-label="Note box" data-balloon-blunt>
-          <i class="fas fa-sticky-note"></i>
-        </button>
-        <div class="separator"></div>
-        <button aria-label="Unordered List" data-balloon-blunt>
-          <i class="fas fa-list"></i>
-        </button>
-        <button aria-label="Ordered List" data-balloon-blunt>
-          <i class="fas fa-list-ol"></i>
-        </button>
-        <div class="separator"></div>
-        <button aria-label="Image" data-balloon-blunt>
-          <i class="fas fa-camera"></i>
-        </button>
-        <button aria-label="Image" data-balloon-blunt>
-          <i class="fas fa-link"></i>
-        </button>
-      </div>
-      <article id="richtext"></article>
+
+    <div class="tab-pages">
+      <input id="tab1" type="radio" name="tabs" checked />
+      <label for="tab1">Editor</label>
+      <input id="tab2" type="radio" name="tabs" />
+      <label for="tab2">Source Code</label>
+      <section id="content1">
+        <div class="toolbar">
+          <button aria-label="Important" data-balloon-blunt>
+            <i class="fas fa-bold"></i>
+          </button>
+          <button aria-label="Emphasize" data-balloon-blunt>
+            <i class="fas fa-italic"></i>
+          </button>
+          <button aria-label="Highlight" data-balloon-blunt>
+            <i class="fas fa-highlighter"></i>
+          </button>
+          <button aria-label="It's Code!" data-balloon-blunt>
+            <i class="fas fa-code" data-balloon-blunt></i>
+          </button>
+          <div class="separator"></div>
+          <button aria-label="Big Heading" data-balloon-blunt>
+            <i class="fas fa-heading"></i>
+          </button>
+          <button aria-label="Small Heading" data-balloon-blunt>
+            <i class="fas fa-heading" style="color:gray"></i>
+          </button>
+          <div class="separator"></div>
+          <button aria-label="Code Snippet" data-balloon-blunt>
+            <i class="fas fa-laptop-code"></i>
+          </button>
+          <button aria-label="Quote" data-balloon-blunt>
+            <i class="fas fa-quote-left"></i>
+          </button>
+          <button aria-label="Note box" data-balloon-blunt>
+            <i class="fas fa-sticky-note"></i>
+          </button>
+          <div class="separator"></div>
+          <button aria-label="Unordered List" data-balloon-blunt>
+            <i class="fas fa-list"></i>
+          </button>
+          <button aria-label="Ordered List" data-balloon-blunt>
+            <i class="fas fa-list-ol"></i>
+          </button>
+          <div class="separator"></div>
+          <button aria-label="Image" data-balloon-blunt>
+            <i class="fas fa-camera"></i>
+          </button>
+          <button aria-label="Image" data-balloon-blunt>
+            <i class="fas fa-link"></i>
+          </button>
+        </div>
+        <article id="richtext"></article>
+      </section>
+      <section id="content2">
+        <p>some code in here</p>
+      </section>
     </div>
     <script src="./../../richtext/dist/richtext.min.js"></script>
     <script src="main.js"></script>
