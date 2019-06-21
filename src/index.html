@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Richtext Editor</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans:100|Judson:700|Lato:100|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/4f69c52348.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="like-logo">
+        <div>
+          <h1>Richtext</h1>
+          <h3>with configurable styles</h3>
+        </div>
+      </div>
+      <div class="menu">
+        <a class="myblog" href="https://alidoustkani.com">myblog</a>
+        <div class="separator"></div>
+        <a href="https://github.com/ali-doustkani/richtext">GitHub</a>
+      </div>
+    </header>
+    <div class="panel">
+      <div class="toolbar">
+        <button aria-label="Important" data-balloon-blunt>
+          <i class="fas fa-bold"></i></button
+        ><button aria-label="Emphasize" data-balloon-blunt>
+          <i class="fas fa-italic"></i></button
+        ><button aria-label="Highlight" data-balloon-blunt>
+          <i class="fas fa-highlighter"></i></button
+        ><button aria-label="It's Code!" data-balloon-blunt>
+          <i class="fas fa-code" data-balloon-blunt></i>
+        </button>
+        <div class="separator"></div>
+      </div>
+      <article id="richtext"></article>
+    </div>
+    <script src="./../../richtext/dist/richtext.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

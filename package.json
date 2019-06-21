@@ -1,0 +1,16 @@
+{
+  "name": "richtextdemo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "author": "Ali Doustkani",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "balloon-css": "^1.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.21.0"
+  }
+}
