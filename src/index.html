@@ -30,13 +30,20 @@
         <a href="https://github.com/ali-doustkani/richtext">GitHub</a>
       </div>
     </header>
-
-    <div class="tab-pages">
-      <input id="tab1" type="radio" name="tabs" checked />
-      <label for="tab1">Editor</label>
-      <input id="tab2" type="radio" name="tabs" />
-      <label for="tab2">Source Code</label>
-      <section id="content1">
+    <main class="tab">
+      <div class="tab-pages">
+        <input
+          id="tab1"
+          type="radio"
+          name="tabs"
+          data-page="richtext-area"
+          checked
+        />
+        <label for="tab1">Editor</label>
+        <input id="tab2" type="radio" name="tabs" data-page="content2" />
+        <label for="tab2">Source Code</label>
+      </div>
+      <section id="richtext-area">
         <div class="toolbar">
           <button aria-label="Important" data-balloon-blunt>
             <i class="fas fa-bold"></i>
@@ -87,7 +94,7 @@
       <section id="content2">
         <p>some code in here</p>
       </section>
-    </div>
+    </main>
     <script src="./../../richtext/dist/richtext.min.js"></script>
     <script src="main.js"></script>
   </body>
