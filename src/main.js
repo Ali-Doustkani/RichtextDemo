@@ -7,12 +7,11 @@ function showTabPage(e) {
   document.getElementById(e.target.dataset.page).style.display = "flex";
 }
 
-function wireTab(name) {
-  document.getElementById(name).addEventListener("change", showTabPage);
+function wireTab(el) {
+  el.addEventListener("change", showTabPage);
 }
 
-wireTab("tab1");
-wireTab("tab2");
+document.querySelectorAll('.tab input[type="radio"]').forEach(wireTab);
 
 // (function() {
 //   var richtext = Richtext.create(document.getElementById("richtext"), {
