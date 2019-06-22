@@ -1,4 +1,5 @@
 import "./main.scss";
+import "./prism";
 
 function showTabPage(e) {
   document
