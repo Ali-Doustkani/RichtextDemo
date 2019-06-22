@@ -14,7 +14,7 @@
     font-size: 1.3em;
     display: inline-block;
     margin: 0 0 -1px;
-    padding: 15px 25px;
+    padding: 0 25px 15px 25px;
     text-align: center;
     color: #abc;
     user-select: none;
@@ -32,5 +32,13 @@
     padding: 20px 0 0;
     border-top: 1px solid #abc;
     height: 100%;
+  }
+  #sourceCode-area {
+    pre {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
   }
 }

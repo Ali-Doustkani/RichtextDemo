@@ -97,8 +97,48 @@
       </section>
       <section id="sourceCode-area">
         <pre class="language-js line-numbers">
-<code></code>
-    </pre>
+<code>// use an element for being the richtext. it could be a &lt;div&gt; or &lt;article&gt;
+const element = document.getElementById("richtext");
+
+// declar your styles. You can use tag names and classes 
+const styles = {
+  important: "strong",
+  highlight: {
+    tag: "span",
+    className: "text-highlight"
+  },
+  header: {
+    parent: true, 
+    tag: "h1"
+  },
+  note: {
+    parent: true,
+    tag: "div",
+    className: "note-box"
+  }
+}
+
+// Create the richtext editor
+var richtext = Richtext.create(element, {
+  defaultLink: "https://",
+  decors: styles
+});
+
+// Now you can call style() or apply() for styling. 
+// style() sets up the selected text. 
+// apply() sets up the selected text or the whole element.
+importantButton.onclick = () => richtext.style("important");
+highlightButton.onclick = () => richtext.style("highlight");
+headerButton.onclick = () => richtext.apply("header");
+noteButton.onclick = () => richtext.apply("note");
+
+// there are also some predefined methods for some styles
+imageButton.onclick = () => richtext.selectImage();
+linkButton.onclick = () => richtext.styleLink();
+ulButton.onclick = () => richtext.applyUnorderedList();
+olButton.onclick = () => richtext.applyOrderedList();
+</code>
+        </pre>
       </section>
     </main>
     <script src="main.js"></script>
