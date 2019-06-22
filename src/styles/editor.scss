@@ -37,35 +37,80 @@
     background: white;
     border: 1px solid #c4c4c4;
     border-top: none;
+    padding: 10px;
     height: 100%;
+    font-size: 1.3em;
+    font-family: "Abel";
+    line-height: 1.4em;
+    a {
+      color: rgb(91, 197, 242);
+    }
     strong {
       font-weight: bold;
     }
     em {
       font-style: oblique;
     }
-    .highlight {
-      background: red;
+    ul {
+      margin-left: 30px;
     }
-    .code-highlight {
-      background: #ccc;
-      font-family: monospace;
+    ol {
+      margin-left: 30px;
     }
     h1 {
-      font-size: 3em;
+      font-family: "Passion One";
+      font-size: 1.5em;
+      margin-top: 0.4em;
     }
     h2 {
-      font-size: 2em;
+      font-family: "Abel";
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 0.3em;
     }
     pre {
-      background: green;
+      background: #1e1e1e;
+      color: #ddd;
+      font-family: monospace;
+      font-size: 0.8em;
+      padding: 10px 15px;
+      border-left: 5px solid brown;
+      line-height: 1.7em;
+    }
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
     }
     q {
       display: block;
-      border-left: 4px solid black;
+      margin: 20px 0;
+      color: #444;
+    }
+    q:before {
+      font-size: 2em;
+      font-family: "Passion One";
+    }
+    q:after {
+      font-size: 2em;
+      font-family: "Passion One";
+    }
+    .highlight {
+      background: #41b3a3;
+    }
+    .code-highlight {
+      background: #1e1e1e;
+      color: #ddd;
+      font-family: monospace;
+      font-size: 0.9em;
+      padding: 4px 6px;
+      border-radius: 3px;
     }
     .notebox {
-      background: red;
+      background: #f0f0f0;
+      padding: 8px;
+      font-size: 0.9em;
+      margin: 10px 0;
+      border-left: 5px solid #41b3a3;
     }
   }
 }
