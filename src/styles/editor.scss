@@ -38,5 +38,34 @@
     border: 1px solid #c4c4c4;
     border-top: none;
     height: 100%;
+    strong {
+      font-weight: bold;
+    }
+    em {
+      font-style: oblique;
+    }
+    .highlight {
+      background: red;
+    }
+    .code-highlight {
+      background: #ccc;
+      font-family: monospace;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    pre {
+      background: green;
+    }
+    q {
+      display: block;
+      border-left: 4px solid black;
+    }
+    .notebox {
+      background: red;
+    }
   }
 }
