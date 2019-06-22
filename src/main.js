@@ -7,15 +7,16 @@ function showTabPage(e) {
     .querySelectorAll(".tab section")
     .forEach(el => (el.style.display = "none"));
   document.getElementById(e.target.dataset.page).style.display = "flex";
+  if (e.target.id === "editor-tab") {
+    document.getElementById("richtext").firstChild.focus();
+  }
 }
 
-function wireTab(el) {
+document.querySelectorAll('.tab input[type="radio"]').forEach(function(el) {
   el.addEventListener("change", showTabPage);
-}
+});
 
-document.querySelectorAll('.tab input[type="radio"]').forEach(wireTab);
-
-var richtext = create(document.getElementById("richtext"), {
+const richtext = create(document.getElementById("richtext"), {
   defaultLink: "https://",
   decors: {
     important: "strong",

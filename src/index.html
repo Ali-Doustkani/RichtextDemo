@@ -28,15 +28,20 @@
     <main class="tab">
       <div>
         <input
-          id="tab1"
+          id="editor-tab"
           type="radio"
           name="tabs"
           data-page="richtext-area"
           checked
         />
-        <label for="tab1">Editor</label>
-        <input id="tab2" type="radio" name="tabs" data-page="sourceCode-area" />
-        <label for="tab2">Source Code</label>
+        <label for="editor-tab">Editor</label>
+        <input
+          id="sourceCode-tab"
+          type="radio"
+          name="tabs"
+          data-page="sourceCode-area"
+        />
+        <label for="sourceCode-tab">Source Code</label>
       </div>
       <section id="richtext-area">
         <div class="toolbar">
