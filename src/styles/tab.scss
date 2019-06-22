@@ -6,6 +6,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  > div {
+    border-bottom: 1px solid #abc;
+  }
   input {
     display: none;
   }
@@ -30,7 +33,6 @@
   section {
     display: none;
     padding: 20px 0 0;
-    border-top: 1px solid #abc;
     height: 100%;
   }
   #sourceCode-area {

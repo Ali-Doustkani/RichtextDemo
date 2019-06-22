@@ -32,6 +32,10 @@
         outline: none;
       }
     }
+    button:last-of-type {
+      margin-left: auto;
+      margin-right: 10px;
+    }
   }
   #richtext {
     background: white;
