@@ -46,6 +46,10 @@
     font-size: 1.3em;
     font-family: "Abel";
     line-height: 1.4em;
+    cursor: text;
+    :focus {
+      outline: none;
+    }
     a {
       color: rgb(91, 197, 242);
     }
