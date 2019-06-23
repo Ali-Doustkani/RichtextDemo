@@ -18,6 +18,7 @@ document.querySelectorAll('.tab input[type="radio"]').forEach(function(el) {
 
 const richtext = create(document.getElementById("richtext"), {
   defaultLink: "https://",
+  staySelected: true,
   decors: {
     important: "strong",
     emphasize: "em",
